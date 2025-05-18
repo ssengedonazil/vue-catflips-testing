@@ -1,0 +1,77 @@
+src/
+tests/
+node_modules/
+.vscode/
+*.config.js
+# Directories to ignore
+# npm version patch
+# npm version minor
+# npm version major
+
+/node_modules
+/public
+/dist
+/build
+/.cache
+/.vscode
+/.idea
+/tmp
+/test
+/coverage
+/logs
+
+# Files to ignore
+index.html
+*.lock
+*.log
+*.env
+*.env.local
+*.env.production
+*.env.test
+*.json
+*.md
+*.yml
+*.yaml
+
+
+# Ignore config files and other development-related files
+/webpack.config.js
+/vite.config.js
+/rollup.config.js
+/eslint.*
+/tsconfig.json
+/jest.config.js
+/.babelrc
+/.eslintignore
+/.editorconfig
+/.prettierrc
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore package manager lock files
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+/node_modules
+/tests
+/demo
+/docs
+/coverage
+/.git
+/*.md
+/*.log
+vite.svg
+# Ignore node_modules and unnecessary files
+node_modules/
+tests/
+*.log
+*.md
+*.lock
+.DS_Store
+coverage/
+dist/
+public/
+validate-pom-pinia.js
+vite.config.ts

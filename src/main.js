@@ -1,10 +1,12 @@
-// main.ts or main.js
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-import App from './App.vue';
+import { createApp } from 'vue'
+import App from './App.vue' 
+import catFlips from 'vue-catflips-pagination'
 
-const app = createApp(App);
-const pinia = createPinia();
+const app = createApp(App)
+             
+app.use(catFlips,{
+  apiUrl: import.meta.env.VITE_API_URL,
+  otherKey: import.meta.env.VITE_OTHER_CONFIG
+})
 
-app.use(pinia)
-.mount('#app');
+app.mount('#app')

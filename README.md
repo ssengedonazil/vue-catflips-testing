@@ -163,8 +163,8 @@ setBearerToken({ token: "abc123", expiresIn: 3600 });
 {{collection}}
 </template>
   <pagination-data v-memo @returnedData='returnedPaginatedData'   :outorelaod='true'
-          :data="{ Rows: 100, ...tileTofetch,  search_keyword }" StateName='patientsListStateName'
-          :url="'/v3/patients'" />
+          :data="{ Rows: 100, ...tileTofetch,  search_keyword }" StateName='inventoryListListStateName'
+          :url="'/v3/inventoryList'" />
 
 <script>
 
@@ -188,8 +188,8 @@ import paginationData from 'vue-catflips-pagination'
 <template>
 {{collection}}
   <catFlips v-memo @returnedData='returnedPaginatedData'   :outorelaod='true'
-          :data="{ Rows: 100, ...tileTofetch,  search_keyword }" StateName='patientsListStateName'
-          :url="'/v3/patients'" />
+          :data="{ Rows: 100, ...tileTofetch,  search_keyword }" StateName='inventoryListListStateName'
+          :url="'/v3/inventoryList'" />
 </template>
 
 <script>
@@ -212,7 +212,7 @@ import { computed, ref, defineAsyncComponent, onMounted } from "vue";
 {{ Collection }} 
  <catFlips v-memo @returnedData='returnedPaginatedData'  :outorelaod='loading_statuses'
           :data="{ Rows: 100, ...tileTofetch, both: 1, search_keyword }" StateName='collectionStateList'
-          :url="'http://127.0.0.1:8000/api/v3/patients'" />
+          :url="'http://127.0.0.1:8000/api/v3/inventoryList'" />
 </template>
 <script setup>
 import { computed, ref } from 'vue'

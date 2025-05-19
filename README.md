@@ -1,9 +1,17 @@
 
-<h1 align="center">CatFlips  🐾</h1>
+<h1 align="center">CatFlips 🐾</h1>
   # Vue 3 + Vite
 
+### READ ABOUT (septor-store)
+https://www.npmjs.com/package/septor-store?activeTab=readme
 
-Vue 3 Advanced Pagination Component
+<p align='center'>
+
+ <img src="https://github.com/ssengedonazil/vue-catflips-testing/blob/POM/assets/CatfilpsLogo.png" alt="CatFlips Logo" width="280" />
+
+</p>
+
+Vue **3** Advanced Pagination Component
 This powerful and customizable Vue 3 pagination component provides a complete and user-friendly pagination interface for navigating large data sets. Designed with flexibility and integration in mind, it's perfect for both internal and external data APIs.
 
 
@@ -65,12 +73,13 @@ Hooks into a global piniaStore state (like piniaStore.Loading) for reactive and 
 
 ```bash
 npm yarn add vue-catflips-pagination
-```
-```bash
+
 npm install -i vue-catflips-pagination
+
 ```
  **ENV VITE_BACKEND_URL**
- ```
+
+```bash
 .env file
 variable
  VITE_BACKEND_URL=<http://127.0.0.1:8000/api>
@@ -91,6 +100,7 @@ const pinia = createPinia();
 app
 .use(catFlips) // Registers globally as <catFlips />
 .use(pinia);
+
 ```
 
 ### can be ignored
@@ -197,12 +207,31 @@ import { computed, ref, defineAsyncComponent, onMounted } from "vue";
     }
 </script>
 ``` 
+```bash
+<template> 
+{{ Collection }} 
+ <catFlips v-memo @returnedData='returnedPaginatedData'  :outorelaod='loading_statuses'
+          :data="{ Rows: 100, ...tileTofetch, both: 1, search_keyword }" StateName='collectionStateList'
+          :url="'http://127.0.0.1:8000/api/v3/patients'" />
+</template>
+<script setup>
+import { computed, ref } from 'vue'
+import { setBearerToken } from 'septor-store'
+incase u have bearerToken Set it like this
+setBearerToken({token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YyL2F1dGgvMmZhIiwiaWF0IjoxNzQ3Njc0MTAzLCJleHAiOjE3NDc3MTczMDMsIm5iZiI6MTc0NzY3NDEwMywianRpIjoic1JMOGUxQVNjd05pSDRuRyIsInN1YiI6IjIyIiwicHJ2IjoiY2I0ZWU5OTdiYjIyNTEyMTg0M2NiMmU1M2I3NGM2M2FkM2RlN2I0YiJ9.Rvwft4MuvpZpgImfPunvBXH-x656eNYQYOAA98z4lZc'})
 
-custom pagination
-:className='hidden '
+const loading_statuses = ref(true)
+const Collection = ref(null)
+const search_keyword = ref(null)
+const tileTofetch=computed(()=>({page:1}))
+ function returnedPaginatedData(databack) {
+      const { loading, result } = databack;
+      Collection.value = result;
+    }
+</script>
+```
 
 <p align="center"> 
-   
-   <img src="https://github.com/ssengedonazil/vue-catflips-testing/blob/POM/assets/Screenshot2025-05-18at00.17.50.png" alt="Septor Logo" width="280" />
+   <img src="https://github.com/ssengedonazil/vue-catflips-testing/blob/POM/assets/Screenshot2025-05-18at00.17.50.png" alt="Septor Logo" width="350" />
 
 </p>

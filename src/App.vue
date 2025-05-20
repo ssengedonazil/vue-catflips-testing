@@ -4,7 +4,7 @@
 {{ Collection }}
  <catFlips v-memo @returnedData='returnedPaginatedData'  :outorelaod='loading_statuses'
           :data="{ Rows: 100, ...tileTofetch, both: 1, search_keyword }" StateName='collectionStateList'
-          :url="'http://127.0.0.1:8000/api/v3/patients'" />
+          :url="'http://127.0.0.1:8000/api/v3/collection'" />
 </template>
 <script setup>
 import { computed, ref } from 'vue'

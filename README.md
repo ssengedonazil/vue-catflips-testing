@@ -39,6 +39,7 @@ This powerful and customizable Vue 3 pagination component provides a complete an
 - Lightweight reactivity
 - Data-ready views
 - Seamless session recovery
+-
 
 ---
 
@@ -273,7 +274,7 @@ import { computed, ref, defineAsyncComponent, onMounted } from "vue";
     const searchKeyword=ref('') 
     const collection=ref([]) 
      const dataTofetch = computed(() => {
-    #  when  ever data changes , catFlips re-renders
+    #  incase data changes , catFlips re-renders
     return {a:"b"}
      })
 
@@ -296,7 +297,7 @@ import { computed, ref, defineAsyncComponent, onMounted } from "vue";
 import { computed, ref } from 'vue'
 import { setBearerToken } from 'septor-store'
 # //incase u have bearerToken Set it like this
-setBearerToken({token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YyL2F1dGgvMmZhIiwiaWF0IjoxNzQ3Njc0MTAzLCJleHAiOjE3NDc3MTczMDMsIm5iZiI6MTc0NzY3NDEwMywianRpIjoic1JMOGUxQVNjd05pSDRuRyIsInN1YiI6IjIyIiwicHJ2IjoiY2I0ZWU5OTdiYjIyNTEyMTg0M2NiMmU1M2I3NGM2M2FkM2RlN2I0YiJ9.Rvwft4MuvpZpgImfPunvBXH-x656eNYQYOAA98z4lZc'})
+setBearerToken({token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9'})
 
 const loadingStatuses = ref(true)
 const Collection = ref(null)

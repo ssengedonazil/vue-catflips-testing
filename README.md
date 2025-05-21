@@ -127,7 +127,7 @@ Hooks into a global piniaStore state (like piniaStore.Loading) for reactive and 
 ### Installation
 
 ```bash
-npm yarn add vue-catflips-pagination
+yarn add vue-catflips-pagination
 
 npm install -i vue-catflips-pagination
 
@@ -245,7 +245,7 @@ import paginationData from 'vue-catflips-pagination'
     const searchKeyword=ref('') 
     const collection=ref([]) 
      const dataTofetch = computed(() => {
-    #  when  ever data changes the  catFlips re-renders
+    #  Incase data changes the  catFlips re-renders
      })
 
 

@@ -45,7 +45,8 @@ This powerful and customizable Vue 3 pagination component provides a complete an
 
 ### Dynamic Page Numbers
 
-This feature intelligently generates a dynamic range of page numbers centered around the current page, enhancing user navigation through paginated content. It calculates a smart set of pages based on configurable segments and offsets, ensuring the pagination view adapts smoothly
+- This feature intelligently generates a dynamic range of page numbers centered around the current page, enhancing user navigation through paginated content. It calculates a smart set of pages based on configurable segments and offsets, ensuring the pagination view adapts smoothly
+
 ---
 
 - Always keeps the current page centered within the visible page numbers when possible.
@@ -102,7 +103,7 @@ Provides robust support for multiple HTTP request methods (e.g., GET, POST, PUT,
 - Accepts custom data payloads for greater request flexibility.
 - Defaults to GET when no method is explicitly defined.
 - Ideal for APIs or components requiring dynamic data-fetching behavior.
-- **This flexibility allows seamless integration with diverse backend endpoints and APIs.**
+- This flexibility allows seamless integration with diverse backend endpoints and APIs.
 
 ### PROPS
 

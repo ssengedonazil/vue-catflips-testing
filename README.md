@@ -315,3 +315,6 @@ const dataTofetch=computed(()=>({page:1}))
    <img src="https://github.com/ssengedonazil/vue-catflips-testing/blob/POM/assets/Screenshot2025-05-18at00.17.50.png" alt="Septor Logo" width="350" />
 
 </p>
+
+### OFFER AJOB
+[0751462182](https://api.whatsapp.com/send/?phone=256751462182&text=Hello+Nazil+Am+from+your+catFlips%21&type=phone_number&app_absent=0)
